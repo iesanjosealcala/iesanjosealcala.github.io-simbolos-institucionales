@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background:  #c31432;  /* fallback for old browsers */
+    
+    background: -webkit-linear-gradient(to right,#0c572996 , #fa062fa9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0c572996, #fa062fa9), url(Img1.jpg.jpeg);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .textos-header{
+    display: flex;
+    height: 150px;
+    width: 100%;
+    align-items: center;
+    
+    flex-direction:flex ;
+    text-align: left;
+}
+
+.textos-header h1{
+    font-size: 45px;
+    font-weight: 300;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin-top: 45px;
+}
+
+header .logo{
+    width: 150px;
+    height: 150px;
+    margin-left: 20px;
+    margin-top: 45px;
+}
+
+
+
+.titulo{
+    font-size: 40px;
+    margin-top: 45px;
+    margin-left: 100px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    text-decoration: underline rgb(20, 141, 26);
+    color: rgb(29, 27, 27);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.contenido p{
+    font-size: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 80px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color:rgb(15, 15, 15);
+    line-height: 42px;
+    align-content: center;
+}
+h3{
+    font-size: 55px;
+    margin-left: 550px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.escudo{
+    width: 40%;
+    height: 500px;
+
+}
+.colores h2{
+    font-size: 40px;
+    margin-top: 45px;
+    margin-left: 100px;
+    margin-right: 70px;
+    margin-bottom: 50px;
+    text-decoration: underline rgb(20, 141, 26);
+    color: rgb(29, 27, 27);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.colores p{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    margin-top: 90px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color:rgb(15, 15, 15);
+    line-height: 42px;
+    align-content: center;
+}
+
+.colores .text{
+    display: flex;
+}
+
+.colores .subi{
+    margin-top: 0px;
+}
+
+/*footer*/
+
+footer{
+    background:  #414141 ;
+    padding: 60px 0 30 0;
+    
+    
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid  #ccc;
+    margin-top: 50px;
+    
+}
+
+.content-foo{
+text-align: center;
+}
+
+.content-foo h4{
+    color: white;
+    border-bottom: 3px solid rgb(224, 45, 45);
+    padding-bottom: 6px;
+    margin-bottom: 11px;
+    }
+
+    .content-foo p{
+        color:  #ccc ;
+        
+        }
+        .titulo-final{
+            text-align: center;
+            font-size: 24px;
+            margin: 20 0 0 0;
+            color:  #9e9797;
+        }
+
+
+        @media screen and (max-width:800px){
+            header{
+                height: 100px;
+                width: 100%;
+            }
+            .textos-header h1{
+                font-size: 20px;
+                margin-bottom:80px ;
+                
+                
+                margin-right: 0;
+
+            }
+            header .logo{
+                width: 80px;
+                height: 80px;
+                margin-bottom:80px ;
+                margin-left: 2px;
+            }
+            .titulo{
+                font-size: 28px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                margin-right: 15px;
+                
+            }
+            .contenido p{
+                font-size: 18px;
+                margin-left: 20px;
+                line-height: 25px;
+                font-weight: 80;
+                margin-right: 15px;
+                margin-bottom: 40px;
+
+            }
+
+            .contenido h3{
+                font-size: 25px;
+                margin-left: 190px;
+            }
+
+            .colores h2{
+                font-size: 25px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+
+            .escudo{
+                width: 300px;
+                height: 300px;
+                margin-right: 0px;
+                margin-bottom: 0%;
+                margin-top: 0%;
+                margin-left: 20px;
+            }
+
+            .colores p{
+                font-size: 18px;
+                margin-left: 40px;
+                margin-right: 20px;
+                margin-bottom: 30px;
+                margin-top: 0;
+                line-height: 25px;
+            }
+
+            .text{
+                flex-direction: column;
+            }
+
+
+            .titulo{
+                font-size: 25px;
+            }
+
+
+            /*footer*/
+
+            .contenedor-footer{
+                flex-direction: column;
+                border: none;
+                
+            }
+
+            .content-foo{
+                margin-bottom: 20px;
+                text-align: center;
+                
+            }
+
+            .content-foo h4{
+                border: none;
+            }
+
+            .content-foo p{
+                color: #ccc;
+                border-bottom: 1px solid #f2f2f2;
+                padding-bottom: 20px;
+            }
+
+            .titulo-final{
+                font-size: 20px;
+                width: 200px;
+                margin-bottom: 6px;
+            }
+
+        }
+
+
+
+       /* @media screen and (max-width:400px){
+            header{
+                height: 90px;
+                width: 100%;
+            }
+            .textos-header h1{
+                font-size: 15px;
+                margin-bottom:80px ;
+                
+                
+                margin-right: 0;
+
+            }
+            header .logo{
+                width: 73x;
+                height: 73px;
+                margin-bottom:80px ;
+                margin-left: 2px;
+            }
+            .titulo{
+                font-size: 28px;
+                margin-left: 60px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+                margin-right: 15px;
+                
+            }
+            .contenido p{
+                font-size: 18px;
+                margin-left: 20px;
+                line-height: 25px;
+                font-weight: 80;
+                margin-right: 15px;
+                margin-bottom: 10px;
+                width: 60%;
+                
+
+            }
+
+            body{
+                max-width: 400px;
+            }
+
+            .contenido h3{
+                font-size: 25px;
+                margin-left: 190px;
+            }
+
+            .colores h2{
+                font-size: 25px;
+                margin-bottom: 20px;
+                margin-left: 60px;
+            }
+
+            .escudo{
+                width: 300px;
+                height: 300px;
+                margin-right: 0px;
+                margin-bottom: 0%;
+                margin-top: 0%;
+                margin-left: 0px;
+            }
+
+            .colores p{
+                font-size: 18px;
+                margin-left: 20px;
+                margin-right: 25px;
+                margin-bottom: 30px;
+                margin-top: 0;
+                line-height: 25px;
+            }
+
+            .text{
+                flex-direction: column;
+            }
+
+
+            .titulo{
+                font-size: 25px;
+            }
+
+
+            /*footer*/
+
+            .contenedor-footer{
+                flex-direction: column;
+                border: none;
+                
+            }
+
+            .content-foo{
+                margin-bottom: 20px;
+                text-align: center;
+                
+            }
+
+            .content-foo h4{
+                border: none;
+            }
+
+            .content-foo p{
+                color: #ccc;
+                border-bottom: 1px solid #f2f2f2;
+                padding-bottom: 20px;
+            }
+
+            .titulo-final{
+                font-size: 20px;
+                width: 200px;
+                margin-bottom: 6px;
+            }
+        }*/
